@@ -1,0 +1,40 @@
+.btn-primary {
+  border: none;
+  color: red;
+}
+
+/*este es un precompilador de css para estilos, todo lo que escriba aqui se muestra es mi archivo style.css*/
+h1 {
+  /*en la entrada de parametro defino un valor por defecto para el color de fondo*/
+  color: rgb(45, 45, 113);
+  width: 100%;
+  background-color: azure;
+  padding: 0.5rem;
+  /*aqui estoy usando el MIXIN recien creado*/
+}
+
+p {
+  /*en la entrada de parametro defino un valor por defecto para el color de fondo*/
+  color: rgb(45, 45, 113);
+  width: 100%;
+  background-color: azure;
+  padding: 0.5rem;
+}
+
+/*ejemplo de anidacion de contenedores por medio de sass*/
+.contenedor {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: rgb(129, 129, 193);
+}
+.contenedor ul {
+  list-style: none;
+}
+.contenedor ul li:hover {
+  color: aliceblue;
+  cursor: pointer;
+}
+
+/*variables en SCSS*/
+/*manejo de MIXINS Y VARIABLES*/
+/*con os mixins puedo definiri un conjunto de estilos que se reipten en varias partes, esto me ahorra codigo y tiempo*//*# sourceMappingURL=style.css.map */

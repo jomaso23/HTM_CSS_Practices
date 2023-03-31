@@ -1,0 +1,12 @@
+/*variables en SCSS*/
+$bg_color: rgb(129, 129, 193);
+$txt_color: rgb(45, 45, 113);
+/*manejo de MIXINS Y VARIABLES*/
+/*con os mixins puedo definiri un conjunto de estilos que se reipten en varias partes, esto me ahorra codigo y tiempo*/
+@mixin estilos($bg_color: azure) {/*en la entrada de parametro defino un valor por defecto para el color de fondo*/
+    color: $txt_color;
+    width: 100%;
+    background-color: $bg_color;
+    padding: 0.5rem;
+}
+

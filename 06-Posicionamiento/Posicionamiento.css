@@ -1,0 +1,42 @@
+div{
+    /*el div por defecto es ESTATIC, es decir, no se puede modificar su posicion en la pantalla, pero si todo lo referente a su aspecto*/
+    border: 1px solid grey;
+    padding: 5px;
+    margin: 5px;
+}
+.relative{
+    /*al cambiar el position a relative puedo cambiar su posicion en la pantalla*/
+    position: relative;
+    left: 80px;/*aqui se puede apreciar como ya se puede mover el div */
+    margin-left: 10px;
+
+}
+
+.fixed{
+    /*el elemento queda fijo en alguna posicion de la pnatalla qye yo le indique*/
+    /*al quedar FIXED se eleimina el espacio sobrante de la caja*/
+    position: fixed;
+    bottom: 0px;
+    background-color: greenyellow;
+    z-index: 10px;
+   
+}
+
+.absolute{
+    /*se posiciona de forma ABSOLUTA con respecto de u elemento padre inmediato*/
+    /*si quiero posicionar algo denttro de otro:
+    uubo un div de clase absoluta dentro de uno de clase relativa*/
+    position: absolute;
+    top: 0px;
+}
+.relative.contenedor{
+    width: 400px;
+    height: 800px;
+    background-color: cadetblue;
+}
+.sticky{
+    position: sticky;/*se queda fijado a la panrtalla aun cuando esta lo pierda de vista*/
+    top: 0px;
+    background-color: aquamarine;
+    z-index: 2px;
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn-modern{
+    width: 10%;
+    width: 10%;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    background-color: orangered;
+    
+}
+
+
+.btn-modern:hover{
+    animation: traslacion 0.5s forwards ease;
+    
+    color:chartreuse;
+    
+}
+.btn-modern:hover::before{
+    content: "estas sobre el ";
+}
+
+@keyframes traslacion{
+    0%{
+        background-color: orangered;
+        transform: translateY(0px); 
+    }
+    100%{
+        background-color: orange;
+        transform: translateY(-5px);
+        box-shadow: 5px 5px 1px 1px rgb(175, 115, 234);
+        
+    }
+}

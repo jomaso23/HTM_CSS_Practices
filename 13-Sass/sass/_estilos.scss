@@ -1,0 +1,32 @@
+
+/*este es un precompilador de css para estilos, todo lo que escriba aqui se muestra es mi archivo style.css*/
+@mixin estilos($bg_color: azure) {/*en la entrada de parametro defino un valor por defecto para el color de fondo*/
+    color: $txt_color;
+    width: 100%;
+    background-color: $bg_color;
+    padding: 0.5rem;}
+$bg_color: rgb(129, 129, 193);
+$txt_color: rgb(45, 45, 113);
+h1 {
+    @include estilos();/*aqui estoy usando el MIXIN recien creado*/
+}
+ p{
+    @include estilos();
+ }
+ /*ejemplo de anidacion de contenedores por medio de sass*/
+ .contenedor {
+     display: inline-block;
+     padding: 0.5rem;
+    background-color:  $bg_color;
+ 
+     ul{list-style: none ;
+         li{
+             &:hover{
+                 color: aliceblue;
+                 cursor: pointer;
+ 
+ 
+              }
+         }
+     }
+ }

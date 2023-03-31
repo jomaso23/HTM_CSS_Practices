@@ -1,0 +1,51 @@
+
+/*codepen.io.......pagina educativa de css*/
+.flex{
+    display: flex;/*posiciona a todos los elementos en su interior como objetos en linea */
+    background-color: yellow;
+    height: 300px;
+    justify-content: space-around;/*mueve los objeto en el eje horizontal*/
+    align-items: center;/*mueve los objetos en el eje vertical*/
+    flex-direction: row;/*me permite modficiar el eje principal que es e HORIZONTAL por defecto*/
+}
+.contenido1{
+    background-color: aquamarine;
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.contenido2{
+    width: 100px;
+    background-color: rgb(51, 10, 186);
+    height: 200px;
+    border: 1px solid rgb(8, 7, 7);
+    
+}
+.contenido3{
+    width: 100px;
+    background-color: rgb(183, 14, 186);
+    height: 200px;
+    border: 1px solid black;
+}
+
+/*
+overflow: lo uso cuando un elemento que esta dentro de otro se desborda y sirve para encapsularlo
+
+*/
+
+/*
+overflow: scroll
+          hidden
+          visible
+          auto
+overflow x e y------otra opcion que especifica un solo eje
+
+*/
+
+/*
+OPACIDAD DE LAS IMAGENES
+imagen:hover{---si paso por encima de la imagen se activa esta opacidad, pisando una opacidad previa
+    opacity : 1
+}
+*/

@@ -1,0 +1,16 @@
+body .boton{
+    width: 80px;
+    height: 40px;
+}
+body .boton::before { 
+    content: 'presione aqui';
+}
+body .boton:hover {
+    background-color: rgb(42, 165, 69);
+    color: aliceblue;  
+}
+
+.boton:hover::before {
+    content: "¡Hecho!"
+}
+
